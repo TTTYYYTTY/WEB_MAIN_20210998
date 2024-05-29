@@ -15,7 +15,7 @@ function session_set(){
 
 function session_get() {
     if (sessionStorage) {
-        return sessionStorage.getItem("Session_Storage_test");
+        return sessionStorage.getItem("Session_Storage_pass");
     } else {
         alert("세션 스토리지 지원 x");
     } 
@@ -23,7 +23,7 @@ function session_get() {
 }
 
 function session_check(){
-    if (sessionStorage.getItem("Session_Storage_test")){
+    if (sessionStorage.getItem("Session_Storage_id")){
         alert("이미 로그인 되었습니다.");
         location.href='../login/index_login.html';
     }
