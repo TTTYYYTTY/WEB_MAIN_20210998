@@ -11,7 +11,7 @@ const check_input = () => {
     const emailValue = emailInput.ariaValueMax.trim();
     const passwordValue = passwordInput.ariaValueMax.trim();
 
-    if(id.value.length === 0 || passwordInput.value.length === 0){
+    if(emailValue.length === 0 || passwordValue.length === 0){
         alert("아이디와 비밀번호를 모두 입력해주세요.");
     } else{
         session_set();
